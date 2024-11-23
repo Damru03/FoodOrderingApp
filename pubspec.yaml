@@ -1,0 +1,69 @@
+name: food_ordering_app
+description: "A food ordering app built using Flutter."
+
+# Prevent accidental publishing to pub.dev
+publish_to: 'none'
+
+# App versioning
+version: 1.0.0+1
+
+# Specify the environment's Dart SDK version
+environment:
+  sdk: ">=3.0.0 <4.0.0"
+
+dependencies:
+  sqflite: ^2.0.0+3
+  path: ^1.8.3
+
+  flutter:
+    sdk: flutter
+
+  # State management
+  provider: ^6.1.2
+
+  # HTTP requests for APIs
+  http: ^1.1.0
+
+  # Cached image loading
+  cached_network_image: ^3.2.3
+
+  # Animations
+  animated_text_kit: ^4.2.2
+
+  # Icons
+  font_awesome_flutter: ^10.3.0
+
+  # Cupertino icons (iOS style icons)
+  cupertino_icons: ^1.0.8
+
+dev_dependencies:
+  # Testing framework
+  flutter_test:
+    sdk: flutter
+
+  # Linting rules
+  flutter_lints: ^5.0.0
+
+flutter:
+  uses-material-design: true
+
+  # Specify app assets
+  assets:
+    - assets/images/istockphoto-655926676-1024x1024.jpg
+    - assets/images/istockphoto-857927726-1024x1024.jpg
+    - assets/images/istockphoto-938742222-1024x1024.jpg
+    - assets/images/istockphoto-1398630614-1024x1024.jpg
+    - assets/images/istockphoto-655926676-1024x1024.jpg
+    - assets/images/istockphoto-1469228227-1024x1024.jpg
+
+  # Specify custom fonts
+  fonts:
+    - family: ChristmasCherrio
+      fonts:
+        - asset: assets/fonts/Christmas Cherrio - Demo.otf
+    - family: Feltful
+      fonts:
+        - asset: assets/fonts/feltful_regular.otf
+    - family: Patrigan
+      fonts:
+        - asset: assets/fonts/Patrigan.ttf
