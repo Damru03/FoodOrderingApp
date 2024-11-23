@@ -37,40 +37,7 @@ Select food items, set target cost, pick a date, and save orders.
 Order Management Screen:
 
 View and manage saved orders.
-Installation
-Clone the Repository:
 
-bash
-Copy code
-git clone https://github.com/Damru03/FoodOrderingApp.git
-cd FoodOrderingApp
-Install Dependencies:
-
-bash
-Copy code
-flutter pub get
-Run the App:
-
-bash
-Copy code
-flutter run
-Screenshots
-(Include relevant screenshots of the app, such as the home screen, cart screen, and order management screen.)
-
-Folder Structure
-plaintext
-Copy code
-lib/
-├── db_helper.dart         # Database functions for SQLite
-├── main.dart              # Entry point of the application
-├── models/
-│   ├── cart_model.dart    # Cart state management
-├── screens/
-│   ├── cart_screen.dart   # Cart management UI
-│   ├── food_management_screen.dart # Food item management UI
-│   ├── home_screen.dart   # Navigation to other screens
-│   ├── order_management_screen.dart # Order viewing and sorting
-│   ├── splash_screen.dart # Splash screen UI
 How It Works
 1. Database Initialization
 The app initializes the SQLite database with two tables:
