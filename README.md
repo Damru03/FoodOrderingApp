@@ -1,20 +1,95 @@
-<<<<<<< HEAD
-# food_ordering_app
+Food Ordering App
+A Flutter-based mobile application for managing food orders with features like adding food items, setting a target cost, saving orders for specific dates, and viewing saved orders.
 
-A new Flutter project.
+Features
+Database Management:
 
-## Getting Started
+Uses SQLite for managing food items and orders.
+Preloaded database with popular food items and prices.
+Food Item Management:
 
-This project is a starting point for a Flutter application.
+Add, update, or delete food items.
+Order Management:
 
-A few resources to get you started if this is your first Flutter project:
+Save selected food items for a specific date.
+View saved orders with details like date, items, and total cost.
+Query and Sort:
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+Query orders by date.
+Sort food items and orders by price, date, or name.
+Technology Stack
+Flutter: UI framework for cross-platform app development.
+Dart: Programming language for building the app.
+SQLite: Database for local storage.
+Screens
+Splash Screen:
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
-=======
-# FoodOrderingApp
->>>>>>> c53b74384ebaaeb35a31771ed50b8ae0eae8eb84
+Displays the app name and transitions to the home screen.
+Home Screen:
+
+Navigation to food item management, cart, and order management screens.
+Food Management Screen:
+
+Manage food items (add, update, delete).
+Cart Screen:
+
+Select food items, set target cost, pick a date, and save orders.
+Order Management Screen:
+
+View and manage saved orders.
+Installation
+Clone the Repository:
+
+bash
+Copy code
+git clone https://github.com/Damru03/FoodOrderingApp.git
+cd FoodOrderingApp
+Install Dependencies:
+
+bash
+Copy code
+flutter pub get
+Run the App:
+
+bash
+Copy code
+flutter run
+Screenshots
+(Include relevant screenshots of the app, such as the home screen, cart screen, and order management screen.)
+
+Folder Structure
+plaintext
+Copy code
+lib/
+├── db_helper.dart         # Database functions for SQLite
+├── main.dart              # Entry point of the application
+├── models/
+│   ├── cart_model.dart    # Cart state management
+├── screens/
+│   ├── cart_screen.dart   # Cart management UI
+│   ├── food_management_screen.dart # Food item management UI
+│   ├── home_screen.dart   # Navigation to other screens
+│   ├── order_management_screen.dart # Order viewing and sorting
+│   ├── splash_screen.dart # Splash screen UI
+How It Works
+1. Database Initialization
+The app initializes the SQLite database with two tables:
+food_items: Stores food names and costs.
+orders: Stores saved orders with items, date, and total cost.
+2. Adding/Updating Food Items
+Users can add, edit, or delete food items via the Food Management Screen.
+3. Saving Orders
+Users can:
+Add items to the cart.
+Set a target cost and select a date.
+Save the order, which calculates the total cost and stores it in the database.
+4. Viewing Orders
+Users can view saved orders in the Order Management Screen.
+Orders are displayed with the date, items, and total cost.
+Challenges Faced
+Setting up database migrations for evolving schemas.
+Resolving merge conflicts during Git synchronization.
+Future Enhancements
+Implement user authentication.
+Add filtering and advanced sorting features.
+Introduce a cloud-based backend for syncing orders across devices.
